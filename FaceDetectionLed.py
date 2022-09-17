@@ -4,7 +4,7 @@ from cvzone.SerialModule import SerialObject
 
 cap = cv2.VideoCapture(0)
 detector = FaceDetector()
-arduino = SerialObject('com3')
+arduino = SerialObject('com3')  #Depends on which port arduino is connected
 
 while True:
     success, img = cap.read()
